@@ -11,13 +11,12 @@ license = { text = "MIT" }
 authors = [
   { name = "Mark Moreno", email = "mark@securehst.com" },
 ]
-requires-python = ">=3.9"
+requires-python = ">=3.10"
 classifiers = [
   "Development Status :: 2 - Pre-Alpha",
   "Intended Audience :: Developers",
   "Natural Language :: English",
   "Operating System :: OS Independent",
-  "Programming Language :: Python :: 3.9",
   "Programming Language :: Python :: 3.10",
   "Programming Language :: Python :: 3.11",
   "Programming Language :: Python :: 3.12",
@@ -26,6 +25,7 @@ classifiers = [
 ]
 
 dependencies = [
+    "requests>=2.32.3",
 ]
 urls."Bug Tracker" = "https://github.com/markm-io/securehst-webhook-notifier/issues"
 urls.Changelog = "https://github.com/markm-io/securehst-webhook-notifier/blob/main/CHANGELOG.md"
@@ -36,6 +36,7 @@ urls.repository = "https://github.com/markm-io/securehst-webhook-notifier"
 dev = [
   "pytest>=8,<9",
   "pytest-cov>=6,<7",
+  "types-requests>=2.32.0.20250328",
 ]
 docs = [
   "furo>=2023.5.20; python_version>='3.11'",
@@ -45,7 +46,7 @@ docs = [
 ]
 
 [tool.ruff]
-line-length = 88
+line-length = 120
 lint.select = [
   "B",   # flake8-bugbear
   "D",   # flake8-docstrings

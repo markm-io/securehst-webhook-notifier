@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.1.1 (2025-04-29)
+
+### Bug fixes
+
+- Update version and expose webhook functions in __init__.py ([`9b04c13`](https://github.com/markm-io/securehst-webhook-notifier/commit/9b04c1346420c299da07739d5eaa34f73198a3b4))
+
 ## v0.1.0 (2025-04-29)
 
 ## v0.0.0 (2025-04-28)
